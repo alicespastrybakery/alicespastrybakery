@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alice's Pastry and Bakery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #A5E4ED;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #FFC356;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        header img {
+            max-width: 150px;
+            border-radius: 50%;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #FF85D0;
+            padding: 15px;
+            flex-wrap: wrap;
+        }
+        nav a {
+            margin: 5px 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #FFC356;
+        }
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        section:nth-child(even) {
+            background-color: #E9D1FF;
+        }
+        section:nth-child(odd) {
+            background-color: #FF85D0;
+        }
+        footer {
+            background-color: #FFC356;
+            padding: 10px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+        .catalogue {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .catalogue div {
+            background-color: white;
+            margin: 15px;
+            padding: 20px;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .catalogue div:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        .catalogue img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .catalogue h3 {
+            color: #FF85D0;
+        }
+        .about, .contact {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .about p, .contact p {
+            font-size: 1.1em;
+            line-height: 1.6em;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #FFC356;
+        }
+        .testimonial {
+            background-color: #E9D1FF;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .testimonial p {
+            font-size: 1em;
+            line-height: 1.4em;
+        }
+        .testimonial h3 {
+            color: #FF85D0;
+            margin-top: 15px;
+        }
+        .contact a {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 15px 30px;
+            background-color: #FF85D0;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-size: 1em;
+        }
+        .contact a:hover {
+            background-color: #FF6BAF;
+        }
+
+        @media (max-width: 768px) {
+            header img {
+                max-width: 100px;
+            }
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                margin: 10px 0;
+            }
+            .catalogue {
+                flex-direction: column;
+                align-items: center;
+            }
+            .catalogue div {
+                width: 90%;
+            }
+            section {
+                padding: 30px 10px;
+            }
+            footer {
+                font-size: 0.8em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 10px;
+            }
+            nav {
+                padding: 10px;
+            }
+            nav a {
+                margin: 5px 0;
+                font-size: 0.9em;
+            }
+            .contact a {
+                font-size: 0.9em;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="C:\Users\Usuario\Downloads\Logo Pastelería Flores Aesthetic Creativo Rosa.png" alt="Logo de Alice's Pastry and Bakery">
+    </header>
+    <nav>
+        <a href="#about">Sobre Nosotros</a>
+        <a href="#catalogue">Catálogo</a>
+        <a href="https://www.instagram.com/alicespastrybakery/" target="_blank">Instagram</a>
+        <a href="#testimonials">Testimonios</a>
+    </nav>
+    <section id="about" class="about">
+        <h2>Sobre Nosotros</h2>
+        <p>Bienvenidos a Alice’s Pastry and Bakery. Soy Alice, y mi misión es alegrar tu hogar con dulces hechos a mano, inspirados en las recetas de mi abuela y preparados con ingredientes frescos.</p>
+        <p>Aquí encontrarás productos, recetas y tips de cocina. Gracias por acompañarme en esta dulce aventura. ¡Que cada bocado te haga sonreír!</p>
+    </section>
+    <section id="catalogue">
+        <h2>Catálogo de Productos</h2>
+        <div class="catalogue">
+            <div>
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLbBdqW4ZkLBiCGHO40ukK_9pTjIkMz0QkTrQWkg4lAt8i6XVTppmmHlXASCRtEd1FEiJ8kN4rJWrEGDbmRNRd-ZioI3nolNcb9YVd4pzbK-nkV1Z0Ohhjdtk_5SL_Eyb1Uge4hU6iLOM/s1600/Red+velvet+Brownies_1.jpg" alt="Brownie Tradicional">
+                <h3>Brownie Tradicional</h3>
+                <p>Delicioso pastel de chocolate con decoración floral. Perfecto para cualquier ocasión especial.</p>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/250" alt="Galleta con chips de chocolate">
+                <h3>Galleta con chips de chocolate</h3>
+                <p>Exquisitos macarons con un toque de fresa, crujientes por fuera y suaves por dentro.</p>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/250" alt="Cupcake de Carrotcaket">
+                <h3>Cupcake de Carrotcaket</h3>
+                <p>Fresca tarta con una selección de frutas de temporada, perfecta para el verano.</p>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/250" alt="Cupcake de RedVelvet">
+                <h3>Cupcake de RedVelvet</h3>
+                <p>Deliciosos cupcakes de vainilla con frosting de crema de mantequilla. Ideal para celebraciones.</p>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/250" alt="Brownie de Red Velvet">
+                <h3>Brownie de Red Velvet</h3>
+                <p>Galletas de mantequilla decoradas a mano. Perfectas para regalos o fiestas temáticas.</p>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/250" alt="Cupcake de Pie de Limón">
+                <h3>Cupcake de Pie de Limón</h3>
+                <p>Brownies de chocolate intensamente ricos y fudgy. Una delicia irresistible.</p>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/250" alt="Blondie con chips de chocolate blanco">
+                <h3>Blondie con chips de chocolate blanco</h3>
+                <p>Clásica tarta de queso con una base de galleta y un toque de vainilla. Suave y cremosa.</p>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/250" alt="Cheesecake de Oreo">
+                <h3>Cheesecake de Oreo</h3>
+                <p>Delicioso pan de plátano con nueces. Perfecto para el desayuno o la merienda.</p>
+            </div>
+        </div>
+    </section>
+    <section id="testimonials">
+        <h2>Testimonios</h2>
+        <div class="testimonial">
+            <p>"Las tartas de Alice son simplemente maravillosas. Cada bocado es una explosión de sabores. ¡Totalmente recomendada!"</p>
+            <h3>- María González</h3>
+        </div>
+        <div class="testimonial">
+            <p>"Los macarons de fresa son los mejores que he probado. La textura y el sabor son perfectos             . ¡Definitivamente volveré por más!"</p>
+            <h3>- Juan Pérez</h3>
+        </div>
+        <div class="testimonial">
+            <p>"El pastel de chocolate fue un éxito en nuestra fiesta. Todos preguntaron de dónde lo habíamos sacado. ¡Gracias, Alice!"</p>
+            <h3>- Ana López</h3>
+        </div>
+        <div class="testimonial">
+            <p>"Las galletas decoradas son tan bonitas que da pena comérselas, pero el sabor es aún mejor. ¡Recomendadas!"</p>
+            <h3>- Carlos Méndez</h3>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Síguenos en Instagram</h2>
+        <p>Para cotizaciones y más información, visita nuestro Instagram:</p>
+        <a href="https://www.instagram.com/alicespastrybakery/" target="_blank">Ir a Instagram</a>
+    </section>
+    <footer>
+        <p>© 2024 Alice's Pastry Bakery. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
